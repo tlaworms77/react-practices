@@ -290,4 +290,76 @@ $ npm start
       - 자식은 변경 할 수 없다. 부모가 소유한다.
 
 -- 감을 잡았으면 더 자세한 리액트의 내용은 다음 장부터 [칸반 보드 애플리케이션]을 완성해 가면서 실습힌다.
+
+
+
+
+
+[실습6] Component's state(상태): 칸반 보드 애플리케이션 소개
+
+*** 5-1 프로젝트 생성 및 개발 환경 구성
+
+-- 프로젝트 구조 초기화
+$ mkdir project-ex09
+$ cd project-ex09
+$ npm init -y
+$ mkdir public
+$ mkdir src
+
+-- 패키지 설치
+$ npm i -D webpack webpack-cli webpack-dev-server @babel/core babel-loader @babel/preset-env @babel/preset-react react react-dom
+
+-- webpack.conf.js 생성 및 설정
+const path = require('path');
+
+module.exports = {
+    entry: path.resolve('src/index.js'),
+    output: {
+        path: path.resolve('public'),
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            loader: 'babel-loader'
+        }]
+    },    
+    devServer: {
+        contentBase: path.resolve('public'),
+        host: '0.0.0.0',
+        port: 8080,
+        inline: true,
+        liveReload: true,
+        hot: false,
+        compress: true,
+        historyApiFallback: true
+    }     
+}
+
+-- babel.config.json 생성 및 설정
+{
+    "presets": [["@babel/env", {
+        "targets": {
+            "ie": "11",
+            "edge": "80",
+            "firefox": "73",
+            "chrome": "82",
+            "opera": "69",
+            "safari": "13"
+        }
+    }], "@babel/preset-react"]
+}
+
+-- npm scriptting 적용
+"scripts": {
+    "start": "node_modules/.bin/webpack-dev-server --progress",
+    "build": "node_modules/.bin/webpack"
+}
+
+
+*** 5-2 Component Design
+
+-- public/_index.html (Component Design) 작성
+
 </pre>
