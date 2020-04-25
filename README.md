@@ -1,6 +1,6 @@
 ## React.JS Practices
 
-class **Index** extends React.Component {<br/>
+export default class **Index** extends React.Component {<br/>
 &nbsp;&nbsp;&nbsp;render() {<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br/>
