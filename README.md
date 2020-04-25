@@ -4,8 +4,8 @@ class **Index** extends React.Component {<br/>
 &nbsp;&nbsp;&nbsp;render() {<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='ch01' title='시작하기'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='ch02' title='JSX'/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='[ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)' title='[시작하기](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='[ch02](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)' title='[JSX](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='ch03' title='Virtual DOM'/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='ch04' title='Component'/&gt;<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;IndexItem chapter='ch05' title='Routing'/&gt;<br/>
