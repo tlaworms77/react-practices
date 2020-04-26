@@ -196,7 +196,7 @@ $ npm start
 
 
 
-[실습6] Component 조합 방법 및 속성의 전달
+[실습6] Component 구현 & Component 속성
 
 *** 5-1 프로젝트 생성 및 개발 환경 구성
 
@@ -265,16 +265,19 @@ module.exports = {
 -- public/_index.html (Component Design) 작성
 
 
-*** 5-3 Component들 구현 및 조합
+*** 5-3 Component구현 및 조합
 
 -- landing html 작성
 public/index.html
 
 -- react component 작성
+    src/index.js
     src/App.js
+
     src/FoodList.js
     src/FoodListItem.js
-    src/index.js
+
+-- quantity, name 속성에 대해 코드로 이해하기
 
 -- 빌드(번들링)		 
 $ npm run build
@@ -282,84 +285,47 @@ $ npm run build
 -- 개발 서버 실행 및 브라우저에서 애플리케이션 결과 확인
 $ npm start
 
--- 몇 가지 맛보기 리액트의 특징
-    + 재사용 가능한 컴포넌트를 중첩하고 조합하는 방법으로 UI(View)를 만드는 방식을 추천한다.
-    + property(속성)
-        부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 메카니즘
-      - 부모 -> 자식 (단방향)
-      - 자식은 변경 할 수 없다. 부모가 소유한다.
 
--- 감을 잡았으면 더 자세한 리액트의 내용은 다음 장부터 [칸반 보드 애플리케이션]을 완성해 가면서 실습힌다.
-
-
-
+*** 5-4 실습 내용 요약
+-- Component 구현
+    재사용 가능한 컴포넌트를 중첩하고 조합하는 방법으로 UI(View)를 만드는 방식을 추천한다.
+-- Component Property(속성)
+    - 부모 컴포넌트에서 자식 컴포넌트로 데이터를 전달하는 메카니즘
+    - 부모 -> 자식 (단방향)
+    - 자식은 변경 할 수 없다.(immutable, 정적 컴포넌트)
+    - 부모가 소유한다.
 
 
-[실습6] Component's state(상태): 칸반 보드 애플리케이션 소개
+
+
+
+
+[실습6] Component 구현 & Component State(상태)
 
 *** 5-1 프로젝트 생성 및 개발 환경 구성
 
--- 프로젝트 구조 초기화
-$ mkdir project-ex09
-$ cd project-ex09
-$ npm init -y
-$ mkdir public
-$ mkdir src
-
--- 패키지 설치
-$ npm i -D webpack webpack-cli webpack-dev-server @babel/core babel-loader @babel/preset-env @babel/preset-react react react-dom
-
--- webpack.conf.js 생성 및 설정
-const path = require('path');
-
-module.exports = {
-    entry: path.resolve('src/index.js'),
-    output: {
-        path: path.resolve('public'),
-        filename: 'bundle.js'
-    },
-    module: {
-        rules: [{
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader'
-        }]
-    },    
-    devServer: {
-        contentBase: path.resolve('public'),
-        host: '0.0.0.0',
-        port: 8080,
-        inline: true,
-        liveReload: true,
-        hot: false,
-        compress: true,
-        historyApiFallback: true
-    }     
-}
-
--- babel.config.json 생성 및 설정
-{
-    "presets": [["@babel/env", {
-        "targets": {
-            "ie": "11",
-            "edge": "80",
-            "firefox": "73",
-            "chrome": "82",
-            "opera": "69",
-            "safari": "13"
-        }
-    }], "@babel/preset-react"]
-}
-
--- npm scriptting 적용
-"scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress",
-    "build": "node_modules/.bin/webpack"
-}
-
+[실습5]와 동일
 
 *** 5-2 Component Design
-
 -- public/_index.html (Component Design) 작성
 
+*** 5-3 Component구현 및 조합
+
+-- landing html 작성
+public/index.html
+
+-- react component 작성
+    src/index.js
+    src/App.js
+    src/data.json
+
+    src/KanbanBoard.js
+    src/CardList.js
+    src/Card.js
+    src/TaskList.js
+
+*** 5-4 실습 내용 요약
+-- Component 구현(중첩과 조합) 복습
+-- Component Property(속성) 복습
+ 
 </pre>

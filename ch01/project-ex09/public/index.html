@@ -1,92 +1,10 @@
 <!DOCTYPE html>
-<html lang='ko'>
 <head>
-<meta charset='UTF-8'>
-<title>Kanban</title>
+<meta charset='utf-8'>
+<title>Kanban Board</title>
 <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-  <div id='root'>
-
-    <!-- Begin: App -->
-    <div class='app'>
-      
-
-
-
-      <!-- Begin: To Do List -->
-      <div class='list'>
-        <h1>To Do</h1>
-
-        <!-- Begin: Card -->
-        <div class='card'>
-          <div class='card-title'>Write some code</div>
-          <div class='card__details'>
-            Code along with the samples in the book
-            <div class='checklist'>
-              <ul>
-                <li class='checklist-task'>
-                  <input type='checkbox' checked='true' />
-                  ContactList Example
-                  <a href='#' class='checklist-task--remove'></a>
-                </li>
-                <li class='checklist-task'>
-                  <input type='checkbox' checked='false' />
-                  Kanban Example
-                  <a href='#' class='checklist-task--remove'></a>
-                </li>
-                <li class='checklist-task'>
-                  <input type='checkbox' checked='false' />
-                  My own experiments
-                  <a href='#' class='checklist-task--remove'></a>
-                </li>                  
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- End: Card -->
-
-      </div>
-      <!-- End: To Do List -->
-
-
-
-
-
-      <!-- Begin: In Progress List -->
-      <div class='list'>
-        <h1>In Progress</h1>
-
-        <!-- Begin: Card -->
-        <div class='card'>
-          <div class='card-title'>Read the Book</div>
-          <div class='card__details'>
-            I should read the whole book
-            <div class='checklist'>
-              <ul>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- End: Card -->
-
-      </div>
-      <!-- End: In Progress List -->
-
-
-
-      <!-- Begin: Done List -->
-      <div class='list'>
-        <h1>Done</h1>
-        
-      </div>
-      <!-- End: Done List -->
-        
-
-
-    </div>
-    <!-- End: App -->
-      
-  </div>
+    <div id='root'></div>
+    <script src='bundle.js'></script>
 </body>
-</html>

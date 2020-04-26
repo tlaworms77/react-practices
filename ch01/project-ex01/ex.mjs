@@ -1,7 +1,8 @@
-const u = {
-    App2: function(){ console.log('llll'); },
-    k: function(){console.log('k');}
-};
 
-({ App2 } = u);
-console.log(App2);
+
+[
+    ['01', 'A'],
+    ['02', 'B']
+].map(({ 0:index, 1:title }) => <Chapter index={ index }, title={ title } />);
+
+console.log(os);

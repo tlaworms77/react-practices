@@ -1,20 +1,14 @@
 ## React.JS Practices
 
-export default class **Index** extends React.Component {<br/>
-&nbsp;&nbsp;&nbsp;render() {<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return (<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='[1](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)' name='[시작하기](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='2' name='Virtual DOM'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='[3](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)' name='[JSX](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='4' name='Component'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='5' name='Routing'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='6' name='Flux'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='7' name='Node API Server와 통합 개발'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='8' name='Spring Boot API Server와 통합 개발'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='9' name='Testing'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Chapter order='10' name='Perfomance Tunning'/&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;)<br/>
-&nbsp;&nbsp;&nbsp;}<br/>
-}
+[
+&nbsp;&nbsp;&nbsp;[[1](https://github.com/kickscar-javascript/react-practices/tree/master/ch01), '[시작하기](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'],
+&nbsp;&nbsp;&nbsp;[[2](https://github.com/kickscar-javascript/react-practices/tree/master/ch02), '[Virtual DOM](https://github.com/kickscar-javascript/react-practices/tree/master/ch02)'],
+&nbsp;&nbsp;&nbsp;[[3](https://github.com/kickscar-javascript/react-practices/tree/master/ch03), '[JSX](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'],
+&nbsp;&nbsp;&nbsp;[4, 'Component'],
+&nbsp;&nbsp;&nbsp;[5, 'Routing'],
+&nbsp;&nbsp;&nbsp;[6, 'Flux'],
+&nbsp;&nbsp;&nbsp;[7, 'Node 백엔드와 통합'],
+&nbsp;&nbsp;&nbsp;[8, 'Spring Boot 백엔드와 통합'],
+&nbsp;&nbsp;&nbsp;[9, 'Testing'],
+&nbsp;&nbsp;&nbsp;[10, 'Perfomance Tunning'],
+].map(({ 0: order, 1: title }) => &lt;Chapter order={ order } title={ title } /&gt;);
