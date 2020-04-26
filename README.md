@@ -1,6 +1,6 @@
 ## React.JS Practices
 
-[
+[<br/>
 &nbsp;&nbsp;&nbsp;[[1](https://github.com/kickscar-javascript/react-practices/tree/master/ch01), '[시작하기](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'],<br/>
 &nbsp;&nbsp;&nbsp;[[2](https://github.com/kickscar-javascript/react-practices/tree/master/ch02), '[Virtual DOM](https://github.com/kickscar-javascript/react-practices/tree/master/ch02)'],<br/>
 &nbsp;&nbsp;&nbsp;[[3](https://github.com/kickscar-javascript/react-practices/tree/master/ch03), '[JSX](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'],<br/>
