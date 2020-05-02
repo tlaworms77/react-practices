@@ -1,35 +1,31 @@
 import React from 'react';
 import TaskList from './TaskList';
 
-
-[
-    ['01', 'A'],
-    ['02', 'B']
-].map(({ 0:index, 1:title }) => {
-    return <h3>Chapter { index } : { title }</h3>;       
-});
-
-
 export default class CardList extends React.Component {
-    state = {
+    constructor() {
+        super(...arguments);
+        this.state = {
+            showDetails: false
+        }
     }
 
     render() {
+        let cardDetails;
+        
+        if(this.state.showDetails){
+            cardDetails = (<div className='Card__Details'>
+                { this.props.description }
+                <TaskList tasks={ this.props.tasks }/>
+            </div>);
+        }
 
         return (
             <div className='Card'>
-                <div className='Card__Title'>{ this.props.title }</div>
-                <div className='Card__Details'>
-                    { this.props.description }
-                    <TaskList tasks={ this.props.tasks }/>
-                </div>
+                <div className='Card__Title' onClick={ () => {
+                    this.setState({ showDetails: !this.state.showDetails });
+                } }>{ this.props.title }</div>
+                { cardDetails }
             </div>
         );        
     }
-
-}
-
-
-const Chapter = ({ index, title }) => {
-     return <h3>Chapter { index } : { title }</h3>;       
 }
