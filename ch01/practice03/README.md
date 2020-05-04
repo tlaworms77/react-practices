@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/ch01) / 실습3. ES6 모듈 기반 애플리케이션
+## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](hhttps://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습3. ES6 모듈 기반 애플리케이션
 
 
 
