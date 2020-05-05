@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TaskList from './TaskList';
 
 export default class Card extends React.Component {
@@ -40,4 +41,12 @@ export default class Card extends React.Component {
             </div>
         );        
     }
+}
+
+Card.propTypes = {
+    // title: PropTypes.string.isRequired,
+    title: (props, propName, componentName) => (!props[propName] || typeof props[propName] !== 'string' || props[propName].length > 50) ? new Error(`${ propName } in ${ componentName } is longer than 50 characters`) : null,
+    description: PropTypes.string.isRequired,
+    color: PropTypes.string,
+    tasks: PropTypes.arrayOf(PropTypes.object)
 }
