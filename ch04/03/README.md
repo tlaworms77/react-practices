@@ -1,10 +1,10 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 03. 속성의 유효성 검사
+## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 03. Prop Validation
 
 <pre>
 
-속성의 유효성 검사
+Prop Validation
 
--- project-ex01 [속성 유효성 검사 기본]
+-- project-ex01 [Prop Validation Basics]
 
 속성 유효성 검사기(기본형)
 PropTyeps.string

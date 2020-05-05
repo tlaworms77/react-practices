@@ -1,8 +1,8 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 02. 제어 컴포넌트와 비제어 컴포넌트
+## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 02. Controlled and Uncontrolled Component
 
 <pre>
 
-폼 처리를 위한 제어 컴포넌트와 비제어 컴포넌트
+Controlled and Uncontrolled Component(Working with Form)
 
 -- project-ex01 [제어 컴포넌트]
     1) 리액트가 컴포넌트를 다루는 방법
