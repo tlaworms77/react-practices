@@ -9,6 +9,7 @@ export default class CardList extends React.Component {
                 key={ element.id }
                 title={ element.title } 
                 description={ element.description }
+                color={ element.color }
                 tasks={ element.tasks } />);
         });
 

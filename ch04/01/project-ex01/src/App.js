@@ -1,13 +1,18 @@
 import React from 'react';
-import KanbanBoard from './KanbanBoard';
-import data from './data.json';
 
 export default class App extends React.Component {
     render() {
+        const message = 'Hello World';
+        const h1Style = {
+            width: 180,
+            height: 30,
+            padding: 5,
+            color: '#fff',
+            backgroundColor: '#ee9900'
+        };
+
         return (
-            <div className='App'>
-                <KanbanBoard cards={ data }/>
-            </div>
+            <h1 style={ h1Style }>{ message }</h1>
         );        
     }
 }
