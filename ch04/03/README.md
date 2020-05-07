@@ -4,9 +4,9 @@
 
 Prop Validation
 
--- project-ex01 [Prop Validation Basics]
+-- project-ex01
 
-속성 유효성 검사기(기본형)
+[Built-in propType Validator : Primitive]
 PropTyeps.string
 PropTyeps.number
 PropTyeps.bool
@@ -14,7 +14,7 @@ PropTyeps.object
 PropTyeps.array
 PropTyeps.func
 
-속성 유효성 검사기(조합형)
+[Built-in propType Validator : Combined Primitives]
 PropTyeps.oneOfType([PropType.string, PropType.number])
 PropTyeps.arrayOf(PropType.number)
 PropTyeps.objectOf(PropType.number) -> 특정 속성값을 가진 객체
@@ -25,7 +25,7 @@ PropTypes.shape({
     isDiscount: PropTyeps.bool.isRequired
 })
 
-속성 유효성 검사기(기타)
+[Built-in propType Validator : Special]
 PropTyeps.node
 PropTyeps.element
 PropTyeps.instanceOf
@@ -33,9 +33,11 @@ PropTyeps.oneOf
 
 isRequired 와 default 값 예제 제시
 
--- kanban-app   [속성 형식 정의 적용해보기]
--- kanban-app   [커스텀 속성 검사기 만들어 보기]
-카드 타이틀을 80자로 제한하고 싶은경우...
+-- project-ex02
+kanban-app   [속성 형식 정의 적용해보기]
 
+-- kanban-app
+Custom PropType Validators
+실습: 카드 타이틀을 80자로 제한하는 커스텀 발리데이터 만들기
 
 </pre>
