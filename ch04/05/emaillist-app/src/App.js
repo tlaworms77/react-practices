@@ -1,10 +1,12 @@
 import React from 'react';
 import EmaillistApp from './EmaillistApp'; 
-import data from './data.json';
 
 export default class App extends React.Component {
     constructor() {
         super(...arguments);
+        this.state = {
+            data: null
+        }
         console.log('App::constructor()');
     }
 
@@ -14,11 +16,21 @@ export default class App extends React.Component {
 
     render() {
         console.log('App::render()');
-        return <EmaillistApp emails={ data } />
+        return <EmaillistApp emails={ this.state.data } />
     }
 
     componentDidMount() {
         console.log('App::componentDidMount()');
+        fetch('http://localhost:9090/data.json')
+            .then((response) => response.json())
+            .then((data) => {
+                this.setState({
+                    data: data
+                });
+            })
+            .catch((error) => {
+                console.error('Error: fetch abd parsing data', error);
+            });
     }
 
     componentWillUnmount() {
