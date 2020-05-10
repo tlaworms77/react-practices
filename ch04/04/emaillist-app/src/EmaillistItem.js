@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class EmaillistItem extends React.Component {
     render() {
@@ -10,4 +11,9 @@ export default class EmaillistItem extends React.Component {
             </li> 
         )
     }
+}
+
+EmaillistItem.propTypes = {
+    fullName: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired
 }

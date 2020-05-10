@@ -1,6 +1,7 @@
 ## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 04. Component Communication
 
 <pre>
+
 1. Props & State
    1.1 Props
     - 컴포넌트 구성(Configurastion) 정보
@@ -39,6 +40,7 @@
     3.1 Data Flow
        - 리액트 애플리케이션에서는 데이터는 컴포넌트 계층에서 위->아래(부모->자식) : 리액트는 아주 명시적이고 분명하다.
        - 하지만 거의 모든 애플리케이션에서는 아래->위 통신해야 하는 경우가 반드시 있음
-    3.2 emaillist 에서 아래->위 통신 구현해보기     
+    3.2 emaillist 에서 아래->위 통신 구현해보기
+    3.3 kanban-app task 추가, 삭제 구현 ?    
  
 </pre>

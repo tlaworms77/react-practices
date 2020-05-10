@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import EmaillistItem from './EmaillistItem';
 
 export default class Emaillist extends React.Component {
@@ -17,4 +18,9 @@ export default class Emaillist extends React.Component {
             </div>
         )
     }
+}
+
+Emaillist.propTypes = {
+    keyword: PropTypes.string,
+    emails: PropTypes.arrayOf(PropTypes.object)    
 }
