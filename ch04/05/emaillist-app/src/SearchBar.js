@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class SearchBar extends React.Component {
     onInputChange(event){
+        console.log('SearchBar:' + event.target.value);
         this.props['notifyChangeHandler'](event.target.value);
     }
 

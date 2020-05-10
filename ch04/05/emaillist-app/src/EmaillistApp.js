@@ -11,6 +11,19 @@ export default class EmaillistApp extends React.Component {
         }
     }
 
+    shoudComponentUpdate() {
+        console.log('EmaillistApp::shoudComponentUpdate()');
+    }
+
+    componentWillUpdate() {
+        console.log('EmaillistApp::componentWillUpdate()');
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('EmaillistApp::getSnapshotBeforeUpdate');
+        return "test-snapshot";
+    }
+
     onNotifyKeywordChange(keyword) {
         this.setState({
             keyword: keyword
@@ -24,6 +37,10 @@ export default class EmaillistApp extends React.Component {
                 <Emaillist keyword={ this.state.keyword } emails={ this.props.emails } />
             </div>
         )
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('EmaillistApp::componentDidUpdate():' + prevProps + ":" + prevState + ":" + snapshot);
     }
 }
 

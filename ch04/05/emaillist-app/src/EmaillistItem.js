@@ -13,6 +13,7 @@ export default class EmaillistItem extends React.Component {
     }
 }
 
+
 EmaillistItem.propTypes = {
     fullName: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired

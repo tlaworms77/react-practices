@@ -3,7 +3,26 @@ import PropTypes from 'prop-types';
 import EmaillistItem from './EmaillistItem';
 
 export default class Emaillist extends React.Component {
+    componentWillReceiveProps() {
+        console.log('Emaillist::componentWillReceiveProps()');
+    }
+
+    shoudComponentUpdate() {
+        console.log('Emaillist::shoudComponentUpdate()');
+    }
+
+    componentWillUpdate() {
+        console.log('Emaillist::componentWillUpdate()');
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('Emaillist::getSnapshotBeforeUpdate');
+        return "test-snapshot";
+    }
+
     render() {
+        console.log('Emaillist:render()');
+
         return (
             <div className='EmaillistApp_Emaillist'>
                 <ul>
@@ -17,6 +36,10 @@ export default class Emaillist extends React.Component {
                 </ul>
             </div>
         )
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        console.log('Emaillist::componentDidUpdate():' + prevProps + ":" + prevState + ":" + snapshot);
     }
 }
 
