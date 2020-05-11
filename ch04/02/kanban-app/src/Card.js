@@ -1,6 +1,8 @@
 import React from 'react';
 import TaskList from './TaskList';
 
+import styles from './Card.css';
+
 export default class Card extends React.Component {
     constructor() {
         super(...arguments);
@@ -9,16 +11,15 @@ export default class Card extends React.Component {
         }
     }
 
-    render() {
-        let cardDetails;
-        if(this.state.showDetails){
-            cardDetails = (<div className='Card__Details'>
-                { this.props.description }
-                <TaskList tasks={ this.props.tasks }/>
-            </div>);
-        }
+    onTitleClick(event) {
+        this.setState({ 
+            showDetails: !this.state.showDetails 
+        });
+    }
 
-        const sideColor = {
+    render() {
+
+        const styleSideColor = {
             position: 'absolute',
             zIndex: -1,
             top: 0,
@@ -29,14 +30,17 @@ export default class Card extends React.Component {
         }
 
         return (
-            <div className='Card'>
-                <div style={ sideColor } />
-                <div className='Card__Title' onClick={ () => {
-                    this.setState({ 
-                        showDetails: !this.state.showDetails 
-                    });
-                } }>{ this.props.title }</div>
-                { cardDetails }
+            <div className={ styles.Card }>
+                <div style={ styleSideColor } />
+                <div className={ styles[this.state.showDetails ? 'Card__Title--is-open' : 'Card__Title'] } onClick={ this.onTitleClick.bind(this) }>
+                    { this.props.title }
+                </div>
+                { !this.state.showDetails ? 
+                    null :
+                    <div className={ styles.Card__Details }>
+                        { this.props.description }
+                        <TaskList tasks={ this.props.tasks } />
+                    </div> }
             </div>
         );        
     }

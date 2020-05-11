@@ -1,22 +1,19 @@
 import React from 'react';
 import Card from './Card';
 
+import styles from './CardList.css';
+
 export default class CardList extends React.Component {
     render() {
-        const cards = [];
-        this.props.cards.forEach(element => {
-            cards.push(<Card
-                key={ element.id }
-                title={ element.title } 
-                description={ element.description }
-                color={ element.color }
-                tasks={ element.tasks } />);
-        });
-
         return (
-            <div className='CardList'>
+            <div className={ styles.CardList }>
                 <h1>{ this.props.title }</h1>
-                { cards }
+                { this.props.cards.map( e => <Card
+                    key={ e.id }
+                    title={ e.title } 
+                    description={ e.description }
+                    color={ e.color }
+                    tasks={ e.tasks } />) }
             </div>
         );        
     }

@@ -5,9 +5,6 @@
 Component Styling
     
 -- project-ex01 [inline]
-
--- kanban-app   [inline]
-
--- kanban-app   [hybrid, CSS Loader as Preprocessor]
+-- kanban-app   [inline && hybrid - css-loader on CSS Module]
   
 </pre>
