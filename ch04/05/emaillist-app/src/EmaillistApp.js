@@ -7,13 +7,10 @@ export default class EmaillistApp extends React.Component {
     constructor() {
         super(...arguments);
         this.state = {
-            keyword: ''
+            keyword: '',
+            emails: null
         }
     }
-
-    componentWillMount() {
-        console.log('EmaillistApp:componentWillMount()');
-    } 
 
     onNotifyKeywordChange(keyword) {
         this.setState({
@@ -25,13 +22,22 @@ export default class EmaillistApp extends React.Component {
         return (
             <div className='EmaillistApp'>
                 <SearchBar keyword={ this.state.keyword } notifyChangeHandler={ this.onNotifyKeywordChange.bind(this) }/>
-                <Emaillist keyword={ this.state.keyword } emails={ this.props.emails } />
+                <Emaillist keyword={ this.state.keyword } emails={ this.state.emails } />
             </div>
         )
     }
 
-    componentWillUnmount() {
-        console.log('EmaillistApp:componentWillUnmount()');
+    componentDidMount() {
+        fetch('http://localhost:9090/data.json')
+            .then((response) => response.json())
+            .then((data) => {
+                this.setState({
+                    emails: data
+                });
+            })
+            .catch((error) => {
+                console.error('Error: fetch abd parsing data', error);
+            });
     }    
 }
 
