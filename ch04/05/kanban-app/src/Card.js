@@ -32,14 +32,19 @@ export default class Card extends React.Component {
         return (
             <div className={ styles.Card }>
                 <div style={ styleSideColor } />
-                <div className={ styles[this.state.showDetails ? 'Card__Title--is-open' : 'Card__Title'] } onClick={ this.onTitleClick.bind(this) }>
+                <div className={ styles[this.state.showDetails ? 'Card__Title--is-open' : 'Card__Title'] }
+                    onClick={ this.onTitleClick.bind(this) }>
                     { this.props.title }
                 </div>
                 { !this.state.showDetails ? 
                     null :
                     <div className={ styles.Card__Details }>
                         { this.props.description }
-                        <TaskList tasks={ this.props.tasks } />
+                        <TaskList
+                            key = { this.props.id }
+                            cardId = { this.props.id }
+                            tasks = { this.props.tasks } 
+                            taskCallbacks = { this.props.taskCallbacks } />
                     </div> }
             </div>
         );        

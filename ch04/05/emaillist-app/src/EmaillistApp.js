@@ -28,7 +28,7 @@ export default class EmaillistApp extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://localhost:9090/data.json')
+        fetch('http://localhost:9090/emaillist')
             .then((response) => response.json())
             .then((data) => {
                 this.setState({
@@ -36,7 +36,7 @@ export default class EmaillistApp extends React.Component {
                 });
             })
             .catch((error) => {
-                console.error('Error: fetch abd parsing data', error);
+                console.error('Error: fetch and parsing data', error);
             });
     }    
 }

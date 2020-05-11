@@ -9,12 +9,16 @@ export default class CardList extends React.Component {
         return (
             <div className={ styles.CardList }>
                 <h1>{ this.props.title }</h1>
-                { this.props.cards.map( e => <Card
-                    key={ e.id }
-                    title={ e.title } 
-                    description={ e.description }
-                    color={ e.color }
-                    tasks={ e.tasks } />) }
+                { this.props.cards && this.props.cards.map( e => <Card
+                    key = { e.id }
+                    id = { e.id }
+                    title = { e.title } 
+                    description = { e.description }
+                    color = { e.color }
+                    tasks = { e.tasks } 
+                    taskCallbacks = { this.props.taskCallbacks }
+                />) }
+
             </div>
         );        
     }
