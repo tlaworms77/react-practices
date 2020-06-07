@@ -53,6 +53,5 @@ React Addon에 복잡하고 중첩된 객체의 변경을 도와주는 immutabli
 
 
 6) kanban-app 태스크 추가/삭제 기능 추가
-   - Node API 서버 작성
      
 </pre>

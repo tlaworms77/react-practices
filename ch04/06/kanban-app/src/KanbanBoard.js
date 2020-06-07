@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import update from 'react-addons-update';
 import PropTypes from 'prop-types';
 import CardList from './CardList';
@@ -9,7 +9,7 @@ const API_URL = 'http://localhost:9090/kanban';
 const API_HEADERS = {
     'Content-Type': 'application/json'
 }
-export default class KanbanBoard extends React.Component {
+export default class KanbanBoard extends Component {
     constructor() {
         super(...arguments);
         this.state = {

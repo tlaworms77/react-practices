@@ -1,31 +1,29 @@
-import * as path from 'path'; 
+import * as path from 'path';
+import fs from 'fs'; 
 import express from 'express';
 import cors from 'cors';
 
 const PORT = 9090;
 
 express()
-  .use(cors())
-  .use('/', express.static(path.resolve('.', 'public')))
-  .get('/kanban', (req, resp) => {
-    return resp
-            .sendStatus(200)
+    .use(cors())
+    .use('/', express.static(path.resolve('.', 'public')))
+    .use(express.json())
+    .get('/kanban/cards', (req, resp) => resp.status(200).json(JSON.parse(fs.readFileSync(path.resolve('.', 'json', 'kanban', 'data.json')).toString())))
+    .get('/emaillist', (req, resp) => resp.status(200).json(JSON.parse(fs.readFileSync(path.resolve('.', 'json', 'emaillist', 'data.json')).toString())))
+    .post('/kanban/cards/:cardId/tasks', (req, resp) => {
+        let task = req.body;
+
+        console.log(`cardId: ${ req.params['cardId'] }에 task name: ${ task.name } 추가`);
+
+        task.id = Date.now();
+
+        resp
+            .status(200)
             .json({
-              result: 'ok'
+                result: 'success',
+                message: null,
+                data: task
             });
-  })
-  .post('/kanban', (req, resp) => {
-    return resp
-            .sendStatus(200)
-            .json({
-              result: 'ok'
-            });
-  })
-  .delete('/kanban/:id', (req, resp) => {
-    return resp
-            .sendStatus(200)
-            .json({
-              result: 'ok'
-            });
-  })
-  .listen(PORT, () => console.log('starts API server on port ' + PORT));
+    })
+    .listen(PORT, () => console.log('starts API server on port ' + PORT));

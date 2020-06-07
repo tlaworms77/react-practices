@@ -11,17 +11,4 @@ express()
   .use(express.json())
   .get('/emaillist', (req, resp) => resp.status(200).json(JSON.parse(fs.readFileSync(path.resolve('.', 'json', 'emaillist', 'data.json')).toString())))
   .get('/kanban/cards', (req, resp) => resp.status(200).json(JSON.parse(fs.readFileSync(path.resolve('.', 'json', 'kanban', 'data.json')).toString())))
-  .post('/kanban/cards/:cardId/tasks', (req, resp) => {
-    let task = req.body;
-    console.log(`cardId: ${ req.params.cardId }에 task name: ${ task.name } 추가`);
-    task.id = Date.now();
-
-    resp
-    .status(200)
-    .json({
-      result: 'success',
-      message: null,
-      data: task
-    });
-  })
   .listen(PORT, () => console.log('starts API server on port ' + PORT));

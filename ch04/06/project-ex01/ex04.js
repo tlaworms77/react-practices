@@ -13,8 +13,10 @@ let updateOrder = update(state.order, {
         $set: '서울시 강남구 논현동...'
     },
     // 해당 패스 값 변경
-    payment: { 
-        $set: 'Mobile'
+    payment: {
+        method: { 
+            $set: 'Mobile'
+        }
     },
     products: {
         // 배열 인덱스로 찾아 변경
