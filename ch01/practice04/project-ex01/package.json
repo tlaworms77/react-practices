@@ -2,10 +2,9 @@
   "name": "project-ex01",
   "version": "1.0.0",
   "description": "",
-  "main": "web-server.js",
+  "main": "server.mjs",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --progress",
-  	"build": "node_modules/.bin/webpack"
+  	"build": "npx webpack"
   },
   "keywords": [],
   "author": "",
