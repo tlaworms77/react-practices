@@ -62,7 +62,7 @@ const App = function(){
    $ npm i -D express
    ```
 
-##### 2-2 server.mjs
+##### 2-2 server.js
 
 1. 코드 작성
 

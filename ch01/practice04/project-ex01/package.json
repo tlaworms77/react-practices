@@ -2,7 +2,7 @@
   "name": "project-ex01",
   "version": "1.0.0",
   "description": "",
-  "main": "server.mjs",
+  "main": "server.js",
   "scripts": {
   	"build": "npx webpack"
   },

@@ -58,7 +58,7 @@ document
    $ npm i -D express
    ```
 
-##### 2-2 server.mjs
+##### 2-2 server.js
 
 1. 코드 작성
 
@@ -89,7 +89,7 @@ document
 2. 실행
 
    ```bash
-   $ node server.mjs
+   $ node server
    starts server on port 8080
    
    ```
