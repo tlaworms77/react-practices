@@ -1,6 +1,6 @@
 ## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습1. DOM API 기반 애플리케이션
 
-React 라이브러리를 이용해 애플리케이션을 작성해 보기 전에 전통적인 프론트엔트 프로그래밍 방법인 브라우저의 DOM을 직접 조작하는 예제를 살펴본다. 이 다음 예제들에서는 단계적으로 똑같은 기능의 React 애플리케이션으로 리팩토링 되어 갈 것이다. 이 과정을 통해 전통적인 DOM 조작 애플리케이션과 React 기반 애플리케이션의 차이점을 비교해 본다.   
+React 애플리케이션 작성 전에 브라우저 DOM을 직접 조작하는 예제를 먼저 작성해 본다. ch01 실습들은 이 예제와 같은 기능의 React 애플리케이션으로 리팩토링해 가는 실습들이다. 전통적인 DOM 조작 애플리케이션과 React 기반 애플리케이션의 차이점을 리팩토링 과정을 통해 이해할 수 있을 것이다.   
 
 #### 1. 애플리케이션 작성
 
@@ -18,7 +18,7 @@ React 라이브러리를 이용해 애플리케이션을 작성해 보기 전에
 </body>
 ```
 
-​	간단한 예제 코드다. id가 'root' 인 `div` HTML Element만 있다.  index.js의 Javascript 코드가 다운로드되어 바로 실행될 것이다.
+​	코드는 간단하다. id가 'root' 인 `div` 만 있고 index.js 파일이 다운로드 되어 JavaScript 코드가 실행된다.
 
 ##### 1.2 public/index.js
 
@@ -34,14 +34,14 @@ document
     .appendChild(App());
 ```
 
-​	ES6로 작성 되었으며 간단한 Browser의 `DOM API` 를 호출하는 코드다. 이 코드는 브라우저에서 실행되기 때문에 ES6에 대한 브라우저 호환성을 체크해 보아야 한다. [ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/) 를 참고해 보면 대중적인 브라우저 중에 IE11이 ES6을 부분적으로 지원하고 대부분 브라우저는 별 문제없이 지원하고 있다. 하지만, 예제 코드 정도는 IE11에서도 지원하니 ES5 하위 트랜스파일링은 이 예제에서는 필요가 없다. 
+​	ES6 문법으로 작성 되어 있는 간단한 Browser `DOM API` 를 호출하는 코드다. 브라우저에서 실행되기 때문에 ES6 브라우저 호환성을 체크해 보아야 한다. [ECMAScript compatibility table](https://kangax.github.io/compat-table/es6/) 를 보면 대부분 브라우저는 ES6을 완벽히 지원하는 데, IE11이 부분적 지원을 한다. 하지만 예제 코드 정도는 IE11에서도 지원 가능한 ES6 코드이기 때문에 하위 트랜스파일링은 필요없다.
 
-1. App 함수는  `<h1>Hello World<h1>`  HTMLElement 를 생성해 반환한다.
-2. 브라우저에 로딩된 문서(Index.html)에서 id가 'root'인  Element를 찾아 App() 함수에서 반환한 HTMLElement를 자식 Element로 추가 한다. 
+1. App 함수는  `<h1>Hello World<h1>`  HTMLElement 객체를 생성해 반환한다.
+2. 브라우저에 로딩된 index.html의 id 'root'인  Element를 찾아 App() 함수가 반환한 HTMLElement를 자식으로 추가한다. 
 
 #### 2. Express 서버 작성 및 실행
 
-​	로컬에서 index.html를 브라우저에서 로딩해도 예제를 실행시키는 데는 문제가 없지만, 간단한 Node 웹서버를 통해 네트워크로 접근해 보자.
+​	로컬에서 index.html를 브라우저에 로딩하여 예제를 실행시켜도 좋지만 간단한 Node 웹 서버를 작성하고 실행하여 웹 서비스 네트워크 접근을 하도록 한다.
 
 ##### 2-1 프로젝트 초기화
 
@@ -74,18 +74,12 @@ document
    })
    ```
 
-   ​	ES6 Module 시스템을 사용하는데, node는 v14+ 부터 지원하며 이를 위해 매니페스트 파일 package.json을 다음과 같이 수정해야 한다.
+   ​	코드는 ES6 Module 시스템을 사용한다. Node는 v14+ 부터 이를 지원하지만 디폴트로 지원하는 것은 아니다. 프로젝트 매니페스트 파일 package.json에 다음 섹션을 추가하면 Node는 프로젝트의 모든 js 파일을 ES6 모듈로 인식하게 된다.
 
    ```json
-   {
-   			.
-     		.
-       "type": "module",
-     		.
-     		.
-   }
+   "type": "module"
    ```
-
+   
 2. 실행
 
    ```bash
@@ -102,15 +96,21 @@ document
 
 #### 3.결론
 
-​	이 예제는 간단하지만 전통적인 프론트엔트 Javascript 프로그래밍 방식을 보여준다. 브라우저는 HTML문서를 파싱하여 DOM을 구성하고 JavaScript 코드는 DOM API를 사용하여 DOM에 노드를 추가, 수정 및 삭제 등의 업데이트를 한다. DOM이 변하면 브라우저는 화면을 다시 렌더링하고 사용자는 동적으로 변화되는 화면을 볼 수 있다.
+​	브라우저는 로드된 HTML문서를 파싱하여 DOM을 구성하고 JavaScript 코드로 DOM API를 호출하여 DOM에 노드를 추가, 수정 및 삭제 등의 업데이트를 한다. DOM이 변하면 브라우저는 화면을 다시 렌더링하고 사용자는 동적으로 변화되는 화면을 볼 수 있는 전통적인 프론트엔드 프로그래밍 방식으로 간단하게 예제를 작성해 보았다.
 
-​	다음은 index.html에 없던 h1 Element가 동적으로 추가된 DOM 구조를 보여준다.
+​	다음은 index.html에 없던 h1 Element가 동적으로 추가된 DOM 구조이다.
 
   <img src="http://image.kickscar.me:8080/markdown/react-practices/ch01-0002.png" alt="s" style="zoom:50%;" /> 
 
-​	DOM API를 직접 호출하는 프로그래밍 방법도 있지만 보통은 jQuery와 같은 DOM의 노드 선택 그리고 조작에 특화된 라이브러리를 사용하기도 한다. 그래도 브라우저 DOM을 직접 조작하는 것은 마찬가지다. 이 방법은 최종적인 실행 코드 전달이 쉽고(작성한대로 JS파일에 담아 html에 링크하면 된다.) 그간 축적해온 프로그래밍 경험 그리고 꽤 안정적이고 검증된 라이브러리와 MVC아키텍처에 기반한 프레임워크들이 존재하기 때문에 그 수명은 당분간 지속될 것이다. 
+​	DOM API를 직접 JavaScript 코드로 호출하는 방법도 있지만 보통은 jQuery와 같은 DOM의 노드 선택 그리고 조작에 특화된 JavaScript 라이브러리를 사용한다. 라이브러리를 사용해도 브라우저 DOM을 직접 조작하는 것은 변함없다. 이 방식은 작성된 실행 코드 전달이 쉽고(작성한대로 JS파일에 담아 html에 링크) 오랫동안 축적해온 프로그래밍 경험, 안정적이고 검증된 라이브러리 또는 MVC아키텍처에 기반한 프레임워크들이 존재하기 때문에 그 수명은 당분간 지속될 것이다. 
 
-​	그러면, 왜 직접적인 브라우저의 DOM을 조작 대신에 React, Vue, Angular와 같은 반응형 UI 렌더링 엔진(Virtual DOM 조작)에 기반한 라이브러리와 프레임워크가 개발되고 화면 개발에 사용해야 할까? (그 중에서도 React...?)
+​	다음 실습은 파일 하나에 있는 JavaScript 코드를 여러 파일로 분리한다. 애플리케이션이 커지거나 중복되는 코드가 있으면 별도의 파일에 코드를 작성하고 여러 파일에서 재사용 하도록 작성하는 것이 바람직하다. 지금, 모듈에 대한 기초적 개념을 언급한 것으로 규모가 큰 애플리케이션 작성을 위해 언어 차원에서 지원하는 기능이다.  실습2, 실습3에서 JavaScript 모듈 지원에 대해서 알아 보도록 한다.
+
+
+
+=========================================================================================================
+
+​	그러면, 왜 직접적인 브라우저의 DOM을 조작 대신에 React, Vue, Angular와 같은 반응형 UI 렌더링 엔진(Virtual DOM 조작)에 기반한 라이브러리와 프레임워크가 개발되고 화면 개발에 사용해야 할까? 그 중에서도 왜 React 인가? 
 
  1. 프론트엔드 프로그래밍 코드의 양이 많아졌다. 
 
