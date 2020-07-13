@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 05. Component Lifecycle &amp; Data Fetching
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch04](https://github.com/kickscar-javascript/react-practices/tree/master/ch04) / 05. Component Lifecycle &amp; Data Fetching
 
 <pre>
 1. Lifecircle

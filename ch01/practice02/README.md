@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습2. 애플리케이션의 분리
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습2. 애플리케이션의 분리
 
 ​	복잡한 애플리케이션은 코드를 분리하여 개발하는 것이 바람직하다. 실습1은 사실 애플리케이션이라 하기에도 민망할 정도로 단순하지만 실습2에서는 이 애플리케이션을 분리해서 개발해 볼 것이다. 이 실습에서는 애플리케이션 코드를 여러 js파일에 옮기는 단순한 분리를 할 것이다. 그리고 이 단순한 분리 방식이 가지는 문제점을 결론에서 언급하고 실습3에 넘겨 해결하도록 한다. 
 

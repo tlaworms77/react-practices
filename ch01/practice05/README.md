@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습5. React API 기반 애플리케이션
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습5. React API 기반 애플리케이션
 
 실습5에서는 JSX를 배제하고 순수 React 코드(React API 함수)로만 앞의 예제를 리팩토링 할 것이다. 처음부터 React 설계는 JSX 사용을 전제하였다. 따라서 JSX를 배제한 React 코드는 일반적이지 않다. 
 
@@ -28,11 +28,9 @@ export const App = function(){
 }
 ```
 
-​	React의 Virtual DOM은 React Element 객체로 이루어진다. createElement 함수는 바로 React Element 객체를 생성한다. 첫번째 파라미터는 브라우저 DOM Element의 종류(HTML Tag), 두 번째는 아이디, 세 번째는 Element의 콘텐츠이다.
+​	React의 Virtual DOM은 React Element 객체로 이루어진다. createElement 함수는 바로 React Element 객체를 생성한다. 첫번째 파라미터는 타입인데 실제 DOM Element와는 크게 상관없지만 예제는 h1을 사용했다. 두 번째는 Element의 아이디, 세 번째는 Element의 콘텐츠이다.
 
-​	React Element와 실재 브라우저의 DOM Element는 언뜻 보기에는 비슷해 보이지만 많은 차이가 있다. React Element는 실제 DOM Element을 만드는 방법을 담고 있다.
-
-​	Virtual DOM과 React API에 대한 것은 [ch02 Virtual DOM]() 에서 자세히 설명한다.  
+​	React Element와 실재 브라우저의 DOM Element는 언뜻 보기에는 비슷해 보이지만 많은 차이가 있다. React Element는 실제 DOM Element을 만드는 방법을 담고 있다. Virtual DOM과 React API에 대한 것은 [ch02 Virtual DOM]() 에서 자세히 설명한다.  
 
 ##### 1-3. src/index.js 작성
 

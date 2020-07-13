@@ -1,4 +1,4 @@
-## React.JS Practices
+## React Practices
 
 [<br/>
 &nbsp;&nbsp;&nbsp;[[1](https://github.com/kickscar-javascript/react-practices/tree/master/ch01), '[Groundwork](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'],<br/>

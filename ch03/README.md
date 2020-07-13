@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / ch03. JSX
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / ch03. JSX
 
 &lt;Chapter order='<strong>3</strong>' title='<strong>JSX</strong>'&gt;<br/>
 

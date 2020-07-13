@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / ch04. Component
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / ch04. Component
 
 &lt;Chapter order='<strong>4</strong>' title='<strong>Component</strong>'&gt;<br/>
 

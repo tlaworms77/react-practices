@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](hhttps://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습3. ES6 모듈 기반 애플리케이션
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](hhttps://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습3. ES6 모듈 기반 애플리케이션
 
 ​	 모듈은 다른 JavaScript 파일에서 쉽게 불러 쓸 수 있는 재사용 가능한 코드(함수, 클래스, 객체, 상수, 변수 등)들을 가리킨다. JavaScript가 브라우저 밖으로 나와 범용 애플리케이션 작성이 가능하기 위해서는 코드를 분리하여 관리하고 재사용할 수 있는 모듈 시스템을 언어가 지원해야 했다. ES6 이전에는 외부 라이브러리(CommonJS 또는 AMD)의 모듈 지원을 활용 했었지만 ES6 부터는 자체 모듈 지원 표준이 마련되었다.
 

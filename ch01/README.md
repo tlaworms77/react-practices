@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / ch01. Groundwork
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / ch01. Groundwork
 
   React를 시작하기 전에 필요한 기초적인 내용을 여러 실습들과 함께 단계적으로 확인해 본다. React Overview를 위한 실습 예제들로 React 프로그래밍 주요 컨셉을 코드로 살펴 볼 것이다. 모든 실습의 개발 설정은 귀챦기는 하지만 가능한 직접할 것이다.
 

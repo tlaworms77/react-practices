@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / ch02. Virtual DOM
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / ch02. Virtual DOM
 
 &lt;Chapter order='<strong>2</strong>' title='<strong>Virtual DOM</strong>'&gt;<br/>
 

@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습1. DOM API 기반 애플리케이션
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습1. DOM API 기반 애플리케이션
 
 React 애플리케이션 작성 전에 브라우저 DOM을 직접 조작하는 예제를 먼저 작성해 본다. ch01 실습들은 이 예제와 같은 기능의 React 애플리케이션으로 리팩토링해 가는 실습들이다. 전통적인 DOM 조작 애플리케이션과 React 기반 애플리케이션의 차이점을 리팩토링 과정을 통해 이해할 수 있을 것이다.   
 

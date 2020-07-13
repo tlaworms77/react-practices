@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / ch05. Routing
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / ch05. Routing
 
 &lt;Chapter order='<strong>5</strong>' title='<strong>Routing</strong>'&gt;<br/>
 

@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch02](https://github.com/kickscar-javascript/react-practices/tree/master/ch02) / 02. DOM Event Model vs React Event Handling
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch02](https://github.com/kickscar-javascript/react-practices/tree/master/ch02) / 02. DOM Event Model vs React Event Handling
 
 ### 1. DOM Event Model
 

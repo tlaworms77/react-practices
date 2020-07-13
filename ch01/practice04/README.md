@@ -1,4 +1,4 @@
-## [React.JS Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습4. 애플리케이션 번들링
+## [React Practices](https://github.com/kickscar-javascript/react-practices) / [ch01](https://github.com/kickscar-javascript/react-practices/tree/master/ch01) / 실습4. 애플리케이션 번들링
 
 ​	webpack을 사용하여 실습3의 모듈로 분리된 애플리케이션 번들링 실습을 한다.
 
@@ -91,7 +91,7 @@ starts server on port 8080
 
 #### 3. 결론
 
-​	webpack을 사용하여 모듈로 분리된 애플리케이션을  번들링하고 배포해 보았다. 이 방법은 복잡한 프론트엔드 개발에서 사용되는 보편적인 방법이다.  webpack 설정은 실습처럼 간단하지 않다. react와 같은 라이브러리를 이용해 프론트엔드 애플리케이션을 개발하고 css, image, font 등 외부 리소스까지 번들링 하고 개발 서버 구동과 빌드 배포를 위한 자동화된 스크립팅 까지 하려면 설정은 당연히 복잡해진다. 
+​	webpack을 사용하여 모듈로 분리된 애플리케이션을  번들링하고 배포해 보았다. 이 방법은 복잡한 프론트엔드 개발에서 사용되는 보편적인 방법이다.  webpack 설정은 실습처럼 간단하지 않다. react와 같은 라이브러리를 이용해 프론트엔드 애플리케이션을 개발하고 css, image, font 등 외부 리소스까지 번들링 하고 개발 서버 구동과 빌드 배포를 위한 자동화된 스크립팅 까지 하려면 설정은 당연히 복잡해진다. webpack에 대한 자세한 설정은 [kickscar-javascript/basic-practice/ch02/07.Webpack:모듈 번들러](https://github.com/kickscar-javascript/basic-practices/tree/master/ch02/07) 를 참고한다.
 
 ​	물론, 설정을 자동화 하는 스크립트들과 도구들이 많이 있지만 이런 도구와 스크립트 도움없이 직접 개발 설정을 할 줄 알고 시간과 귀챦음을 줄이기 위해 설정 스크립트와 도구 사용을 추천한다.
 
