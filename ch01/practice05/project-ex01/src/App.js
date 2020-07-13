@@ -1,10 +1,7 @@
 import React from 'react';
 
-export default class App extends React.Component {
-    render() {
-        const message = 'Hello World';
-        return (
-            <h1>{ message }</h1>
-        );        
-    }
+export const App = function(){
+    const app = React.createElement('h1', null, 'Hello World');
+
+    return app;
 }

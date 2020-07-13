@@ -10,7 +10,7 @@
 #### [실습02. 애플리케이션의 분리](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice02)
 #### [실습03. ES6 모듈 기반 애플리케이션](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice03)
 #### [실습04. 애플리케이션 번들링](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice04)
-#### [실습05. ReacDOM API 기반 애플리케이션](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice05)  
+#### [실습05. React API 기반 애플리케이션](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice05)  
 #### [실습06. JSX 기반 애플리케이션](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice06)
 #### [실습07. 콤포넌트 디자인I &amp; 속성(Props)](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice07)
 #### [실습08. 콤포넌트 디자인II &amp; 상태(State)](https://github.com/kickscar-javascript/react-practices/tree/master/ch01/practice08)
