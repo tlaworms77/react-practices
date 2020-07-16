@@ -100,9 +100,7 @@ $ node server
 starts server on port 8080
 ```
 
-​	브라우저로 접근해 보면 잘 작동하는 것을 확인할 수 있다.
-
-<img src="http://image.kickscar.me:8080/markdown/react-practices/ch01-0008.png" alt="s" style="zoom:40%;" />
+​	브라우저로 접근해 보면 잘 작동하는 것을 확인할 수 있다.<img src="http://image.kickscar.me:8080/markdown/react-practices/ch01-0008.png" alt="s" style="zoom:40%;" />
 
 #### 3. 결론
 
