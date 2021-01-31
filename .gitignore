@@ -1,13 +1,11 @@
-.DS_Store
 **/.DS_Store
 **/node_modules
 
-
-# Editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# IDE directories and files
+**/.idea
+**/.vscode
+**/.suo
+**/.ntvs*
+**/.njsproj
+**/.sln
+**/.sw?

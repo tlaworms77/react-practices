@@ -1,14 +1,32 @@
-## React Practices
+# React Practices
 
-[<br/>
-&nbsp;&nbsp;&nbsp;[[1](https://github.com/kickscar-javascript/react-practices/tree/master/ch01), '[Groundwork](https://github.com/kickscar-javascript/react-practices/tree/master/ch01)'],<br/>
-&nbsp;&nbsp;&nbsp;[[2](https://github.com/kickscar-javascript/react-practices/tree/master/ch02), '[Virtual DOM](https://github.com/kickscar-javascript/react-practices/tree/master/ch02)'],<br/>
-&nbsp;&nbsp;&nbsp;[[3](https://github.com/kickscar-javascript/react-practices/tree/master/ch03), '[JSX](https://github.com/kickscar-javascript/react-practices/tree/master/ch03)'],<br/>
-&nbsp;&nbsp;&nbsp;[[4](https://github.com/kickscar-javascript/react-practices/tree/master/ch04), '[Component](https://github.com/kickscar-javascript/react-practices/tree/master/ch04)'],<br/>
-&nbsp;&nbsp;&nbsp;[5, 'Routing'],<br/>
-&nbsp;&nbsp;&nbsp;[6, 'Flux'],<br/>
-&nbsp;&nbsp;&nbsp;[7, 'Intergration with Node Backend'],<br/>
-&nbsp;&nbsp;&nbsp;[8, 'Intergration with Spring Boot Backend'],<br/>
-&nbsp;&nbsp;&nbsp;[9, 'Testing'],<br/>
-&nbsp;&nbsp;&nbsp;[10, 'Perfomance Tunning']<br/>
-].map(({ 0: order, 1: title }) => &lt;Chapter order={ order } title={ title } /&gt;);
+## ch01\. Groundwork
+#### 01. [타임라인](ch01/01.md)
+<br/>
+
+## ch02\. Virtual DOM
+<br/>
+
+## ch03\. JSX
+<br/>
+
+## ch04\. Component
+<br/>
+
+## ch05\. Routing
+<br/>
+
+## ch06\. Flux
+<br/>
+
+## ch07\. Intergration with Node Backend
+<br/>
+
+## ch08\. Intergration with Spring Boot Backend
+<br/>
+
+## ch09\. Testing
+<br/>
+
+## ch10\. Perfomance Tunning
+<br/>
